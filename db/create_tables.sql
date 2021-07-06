@@ -1,4 +1,4 @@
-CREATE TABLE product (
+CREATE TABLE devcamp.product (
     id bigserial PRIMARY KEY,
     name varchar(50) NOT NULL,
     description text,

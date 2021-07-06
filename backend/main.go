@@ -18,7 +18,7 @@ func main() {
 		Password: "admin",
 		DBName:   "devcamp",
 		Port:     5432,
-		Host:     "db",
+		Host:     "localhost",
 		SSLMode:  "disable",
 	}
 	db := database.GetDatabaseConnection(dbConfig)
@@ -37,7 +37,7 @@ func main() {
 	serverConfig := server.Config{
 		WriteTimeout: 5 * time.Second,
 		ReadTimeout:  5 * time.Second,
-		Port:         9000,
+		Port:         9001,
 	}
 	server.Serve(serverConfig, router)
 }
